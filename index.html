@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="reservation max-w-[700px] mx-auto my-[30px] border-y-[30px] border-x-[3px] border-[#b2b2fd]">
+        <div class="p-[30px]">
+            <form action="https://formspree.io/f/mwpkknlq" method="POST">
+                <h1 class="text-3xl mb-4 text-[#2e2d8c]">Restaurant Reservation Form</h1>
+                <div>
+                    <label class="my-3 text-xl text-[#53509f]" for="name">Name</label> <br>
+                    <div class="flex gap-3 my-4">
+                        <input class="border-2 py-1 px-3 rounded-lg w-[100%]" type="text" name="first" placeholder="First">
+                        <input class="border-2 py-1 px-3 rounded-lg w-[100%]" type="text" name="last" placeholder="Last">
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-[100%] my-4">
+                            <label class="my-3 text-xl text-[#53509f]" for="email">Email</label>
+                            <input class="border-2 py-1 px-3 rounded-lg w-[100%] mt-3" type="email" name="email">
+                        </div>
+                        <div class="w-[100%] my-4">
+                            <label class="my-3 text-xl text-[#53509f]" for="phone">Phone</label>
+                            <input class="border-2 py-1 px-3 rounded-lg w-[100%] mt-3" type="number" placeholder="### ### ####" name="phone">
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-[100%] my-4">
+                            <label class="my-3 text-xl text-[#53509f]" for="reservation">Reservation Date</label>
+                            <input class="border-2 py-1 px-3 rounded-lg w-[100%] mt-3" type="date" placeholder="MM/DD/YYYY" name="reservation-date">
+                        </div>
+                        <div class="w-[100%] my-4">
+                            <label class="my-3 text-xl text-[#53509f]" for="reservation">Reservation Time</label>
+                            <input class="border-2 py-1 px-3 rounded-lg w-[100%] mt-3" type="time" placeholder="HH:MM AM" name="reservation-time">
+                        </div>
+                    </div>
+    
+                    <div class="w-[100%] my-3">
+                        <label class="my-3 text-xl text-[#53509f]" for="text">How many person will you be with?</label>
+                        <input class="border-2 py-1 px-3 rounded-lg w-[100%] mt-4" type="text" name="person">
+                    </div>
+    
+                    <div class="w-[100%] my-3">
+                        <label class="my-4 text-xl text-[#53509f]" for="text">Notes</label>
+                        <textarea class="border-2 py-1 px-3 rounded-lg w-[100%] my-4" name="" id="" rows="4" cols="5" name="message"></textarea>
+                    </div>
+    
+                    <button class="block mx-auto w-[100%] py-3 rounded-lg text-xl text-white bg-[#6865ea]">SEND</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
